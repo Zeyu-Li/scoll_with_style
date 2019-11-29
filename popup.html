@@ -7,39 +7,74 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            body {
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 15px;
+                max-width: 250px;
+                max-height: 350px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .logo img {
+                height: 28px;
+                margin-top: -4px;
+            }
+            .modal-content {
+                padding: 5px 5px 5px 5px;
+                background-color: rgb(224, 224, 224);
+                transition: .2s;
+                -moz-transition: .2s;
+                -webkit-transition: .2s;
+                -o-transition: .2s;
+            }
+            .options {
+                margin-top: 10px;
+            }
+            .options .form-check {
+                border: black 1px 1px 1px 1px;
+                border-radius: 3px;
+                margin: 2px;
+                padding: 2px;
+                transition: .2s;
+                -moz-transition: .2s;
+                -webkit-transition: .2s;
+                -o-transition: .2s;
+            }
+            .donate {
+                line-height: 35px;
+            }
+            .donate button {
+                margin-top: -5px;
+            }
+        </style>
 
         <title>Scroll with Style</title>
+
     </head>
     <body>
-        <div class="">
+        <div class="main">
             <h1 class="logo">
-                <img scr="images/icon.png" class="logo-icon" alt="Logo for this extension"> Scroll with Style <span class="version">(1.0)</span>
+                <img src="images/icon.svg" class="logo-icon" alt="Logo for this extension"> Scroll with Style <span class="version">1.0</span>
             </h1>
         </div>
         <div class="modal-content">
             <p>Selection of scrollbars</p>
             <div class="form-check">
-                <input type="checkbox" name="hide" value="inactive" class="form-check-input col-form-label-lg" id="foo">
-                    <label  class="form-check-label" for="foo"> Hide when inactive</label>
+                <input type="checkbox" name="hide" value="inactive" class="form-check-input col-form-label-lg" id="hid" onchange="check()">
+                    <label  class="form-check-label" for="hid"> Hide when inactive</label>
                 </input>
             </div>
         </div>
-        <div class="modal-examples">
-            <div class="flex-container">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">No scrollbar</label>
-                </div>
-                <p>Regular</p>
-                <p>Mac</p>
-                <p>Thicker Mac</p>
-                <p>Dark</p> <!-- arch inspired -->
-                <p>Light</p>
-                <p>Ubuntu</p>
-                <p>Minty</p> 
-                <p>Colored</p> <!-- dropdown -->
-                <p>Rainbow</p>
-            </div>
+
+        <div class="modal-examples options">
+        </div>
+
+        <div class="donate">
+            Loving Custom Scrollbar?<br>
+            Consider <a href="#" target="_blank"><button type="button" class="btn btn-warning">Donating</button></a>
         </div>
 
         <!-- Optional JavaScript -->
@@ -47,5 +82,34 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- custom JS -->
+        <script>
+        $(document).ready(function () {
+            let options = ['No scrollbar', 'Regular', 'Mac', 'Thicker Mac', 'Dark', 'Light', 'Ubuntu', 'Minty', 'Colored', 'Rainbow' ]
+            for (i=0; i<options.length; i++) {
+                $('.options').append('<div class="flex-container"><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio'+ i +'" value="option'+ i +'" onchange="change()"><label class="form-check-label" for="inlineRadio'+ i +'">'+ options[i] +'</label> </input></div><br></div>')
+            }
+        })
+        function check () {
+            if ($('#hid').is(':checked')) {
+                $('.modal-content').css('background-color', 'white');
+            } else {
+                $('.modal-content').css('background-color', 'rgb(224, 224, 224)');
+            }
+        };
+        function change() {
+            for (i=0; i<$('.options input').length; i++) {
+                let name = '#inlineRadio'+i;
+                if ($(name).is(':checked')) {
+                    $(name).parent().css({'border': '1px solid black',
+                                          'background-color': 'rgb(224, 224, 224)'});
+                } else {
+                    $(name).parent().css({'border': 'none',
+                                          'background-color': 'white'});
+                }
+            }
+        };
+        </script>
+
     </body>
 </html>

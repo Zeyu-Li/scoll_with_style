@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#0D29CC;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;stroke:#A3A3A3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_3" class="st0">
+	<rect class="st1" width="19" height="19"/>
+</g>
+<g id="Layer_2">
+	<circle class="st2" cx="9.5" cy="9.5" r="9"/>
+</g>
+<g id="Layer_1">
+	<line class="st3" x1="9.5" y1="3" x2="9.5" y2="16"/>
+	<line class="st4" x1="9.5" y1="5.44" x2="9.5" y2="13.56"/>
+	<line class="st3" x1="5.44" y1="3" x2="5.44" y2="16"/>
+	<line class="st4" x1="5.44" y1="7.88" x2="5.44" y2="16"/>
+	<line class="st3" x1="13.56" y1="3" x2="13.56" y2="16"/>
+	<line class="st4" x1="13.56" y1="3" x2="13.56" y2="11.12"/>
+</g>
+</svg>
