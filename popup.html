@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
@@ -63,7 +64,7 @@
         <div class="modal-content">
             <p>Selection of scrollbars</p>
             <div class="form-check">
-                <input type="checkbox" name="hide" value="inactive" class="form-check-input col-form-label-lg" id="hid" onchange="check()">
+                <input type="checkbox" name="hide" value="inactive" class="form-check-input col-form-label-lg" id="hid">
                     <label  class="form-check-label" for="hid"> Hide when inactive</label>
                 </input>
             </div>
@@ -83,33 +84,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- custom JS -->
-        <script>
-        $(document).ready(function () {
-            let options = ['No scrollbar', 'Regular', 'Mac', 'Thicker Mac', 'Dark', 'Light', 'Ubuntu', 'Minty', 'Colored', 'Rainbow' ]
-            for (i=0; i<options.length; i++) {
-                $('.options').append('<div class="flex-container"><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio'+ i +'" value="option'+ i +'" onchange="change()"><label class="form-check-label" for="inlineRadio'+ i +'">'+ options[i] +'</label> </input></div><br></div>')
-            }
-        })
-        function check () {
-            if ($('#hid').is(':checked')) {
-                $('.modal-content').css('background-color', 'white');
-            } else {
-                $('.modal-content').css('background-color', 'rgb(224, 224, 224)');
-            }
-        };
-        function change() {
-            for (i=0; i<$('.options input').length; i++) {
-                let name = '#inlineRadio'+i;
-                if ($(name).is(':checked')) {
-                    $(name).parent().css({'border': '1px solid black',
-                                          'background-color': 'rgb(224, 224, 224)'});
-                } else {
-                    $(name).parent().css({'border': 'none',
-                                          'background-color': 'white'});
-                }
-            }
-        };
-        </script>
+        <script src="js/main.js"></script>
 
     </body>
 </html>
