@@ -2,15 +2,16 @@
     "name": "Stylized Scrollbar",
     "version": "1.0",
     "description": "Stylize your scroll bar from a handful of presets",
-    "permissions": ["activeTab","https://code.jquery.com/*", "https://stackpath.bootstrapcdn.com/*", "https://cdnjs.cloudflare.com/*"],
+    "permissions": ["activeTab"],
     "manifest_version": 2,
     "icons": {"128": "icon_128.png"},
     "browser_action": {
         "default_icon": "icon.png",
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_title": "Custom Scrollbar"
     },
 
 	"options_page": "popup.html",
-    "content_security_policy": "script-src 'self' https://code.jquery.com/jquery-3.3.1.slim.min.js; object-src 'self'"
+    "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self'"
 
 }
