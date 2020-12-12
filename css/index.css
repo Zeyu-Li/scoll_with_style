@@ -9,6 +9,17 @@ body {
 h1 {
     font-size: 24px;
 }
+p {
+    font-size: 16px;
+}
+
+/* transition */
+.btn-donate {
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+}
 
 /*  */
 .logo img {
@@ -43,5 +54,14 @@ h1 {
     margin-bottom: 15px;
 }
 .btn-donate {
+    background-color: rgb(255, 173, 22);
     margin-top: -5px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: 0px;
+    cursor: pointer;
+}
+.btn-donate:hover {
+    background-color: rgb(255, 189, 67);
 }

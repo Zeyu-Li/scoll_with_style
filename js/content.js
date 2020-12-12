@@ -1,6 +1,45 @@
 let scroll_bar, rule;
 // defines css rules
-let rules = {"default_dark": `h1 { background-color: black };`, "default_light": ``};
+let rules = {"default_dark": `
+::-webkit-scrollbar-thumb {
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+}
+::-webkit-scrollbar { width: 16px; } 
+::-webkit-scrollbar-track {
+    background: rgba(247, 247, 247, 0.9);
+    box-shadow: inset 0 0 5px #dedcdc;
+}
+::-webkit-scrollbar-thumb {
+    background: #424242;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+`, "default_light": `
+::-webkit-scrollbar-thumb {
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+}
+::-webkit-scrollbar { width: 16px; } 
+::-webkit-scrollbar-track {
+    background: rgba(36, 36, 36, 0.9);
+    box-shadow: inset 0 0 5px #474747;
+}
+::-webkit-scrollbar-thumb {
+    background: #d6d6d6;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bdbdbd;
+}`};
 
 // css injector
 function cssInjector() {
