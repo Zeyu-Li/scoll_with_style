@@ -1,0 +1,47 @@
+/* main */
+body {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    min-width: 250px;
+    min-height: 350px;
+}
+h1 {
+    font-size: 24px;
+}
+
+/*  */
+.logo img {
+    height: 28px;
+    margin-top: -4px;
+}
+.modal-content {
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(224, 224, 224);
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+}
+.options {
+    margin-top: 10px;
+}
+.options .form-check {
+    border: black 1px 1px 1px 1px;
+    border-radius: 3px;
+    margin: 2px;
+    padding: 2px;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+}
+
+/* donate */
+.donate {
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.btn-donate {
+    margin-top: -5px;
+}
