@@ -1,6 +1,6 @@
 let scroll_bar, rule;
 // defines css rules
-let rules = {"default_dark": `
+let rules = {"default_light": `
 ::-webkit-scrollbar-thumb {
     transition: .2s;
     -moz-transition: .2s;
@@ -20,7 +20,7 @@ let rules = {"default_dark": `
 ::-webkit-scrollbar-thumb:hover {
     background: #666666;
 }
-`, "default_light": `
+`, "default_dark": `
 ::-webkit-scrollbar-thumb {
     transition: .2s;
     -moz-transition: .2s;
