@@ -19,14 +19,20 @@
         </div>
         </div>
 
-        <form class="options">
+        <form class="options" name="theme_form">
             <!-- different scroll bar options -->
+            <div class="scroll_options">
+                <label for="default_light" title="Dark Theme"><input type="radio" id="default_light" name="theme" value="default_light">
+                <img src="images/light.jpg"></label>
+                <label for="default_dark" title="Light Theme"><input type="radio" id="default_dark" name="theme" value="default_dark">
+                <img src="images/dark.jpg"></label>
+            </div><br>
         </form>
 
         <div class="donate">
             <p>Loving Custom Scrollbar?</p>
-            <!-- TODO: update donation page when it is setup -->
-            <p>Consider <a href="https://github.com/Zeyu-Li" target="_blank"><button type="button" class="btn-donate"><b>Donating</b></button></a></p>
+            <!-- update donation page when it is setup -->
+            <p>Consider <a href="https://github.com/sponsors/Zeyu-Li" target="_blank"><button type="button" class="btn-donate"><b>Donating</b></button></a></p>
         </div>
 
         <!-- custom JS -->

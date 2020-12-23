@@ -7,7 +7,7 @@ let rules = {"default_dark": `
     -webkit-transition: .2s;
     -o-transition: .2s;
 }
-::-webkit-scrollbar { width: 16px; } 
+::-webkit-scrollbar { width: auto; } 
 ::-webkit-scrollbar-track {
     background: rgba(247, 247, 247, 0.9);
     box-shadow: inset 0 0 5px #dedcdc;
@@ -27,7 +27,7 @@ let rules = {"default_dark": `
     -webkit-transition: .2s;
     -o-transition: .2s;
 }
-::-webkit-scrollbar { width: 16px; } 
+::-webkit-scrollbar { width: auto; } 
 ::-webkit-scrollbar-track {
     background: rgba(36, 36, 36, 0.9);
     box-shadow: inset 0 0 5px #474747;
