@@ -6,9 +6,12 @@
 This project is a Chrome extension by: Andrew Li
 It is a simple extension that modifies the scrollbar to look better.
 
-![screenshot1](images/screenshot1.jpg)
+Now available of the [Chrome store](https://chrome.google.com/webstore/detail/stylized-scrollbar/igpchmaapelclmhofnheepclmfniobnc?hl=en)
 
-Options Menu
+<img src="images/screenshot1.jpg" alt="screenshot1" width="100px" />
+
+Options Menu:
+
 ![screenshot2](images/screenshot2.jpg)
 
 
